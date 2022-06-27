@@ -1,0 +1,140 @@
+body {
+  background-color: aliceblue;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.header-body {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 32px;
+}
+
+.header-body_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+  cursor: pointer;
+}
+
+.header-body_list button {
+  background-color: #0071bc;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+}
+
+.header-body_list button a {
+  color: #fff;
+}
+
+.main {
+  width: 70%;
+  margin: 150px auto;
+}
+
+.main section {
+  margin: 50px 0;
+}
+
+.title {
+  text-align: center;
+  font-size: 36px;
+  position: relative;
+}
+
+.sub {
+  text-align: center;
+  color: #0071bc;
+  font-size: 18px;
+  margin-bottom: 36px;
+}
+
+.introduce-body {
+  text-align: center;
+}
+
+.introduce-body_img {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.introduce-body_text {
+  width: 50%;
+  padding: 12px 36px;
+  height: 100%;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+
+.introduce-body_text h3 {
+  font-size: 32px;
+  padding: 12px 0;
+  text-align: center;
+}
+
+.introduce-body_text .information-list li {
+  font-size: 20px;
+  padding: 8px 0;
+  text-align: center;
+}
+
+.picture-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+}
+
+.picture-body_img {
+  width: 42%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+
+.footer-body {
+  background-color: #fff;
+  padding: 36px;
+}
+
+.footer-body p {
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
