@@ -302,4 +302,56 @@ header {
   -o-object-fit: cover;
      object-fit: cover;
 }
+
+.memory {
+  height: 800px;
+}
+
+.composition {
+  margin-top: 50px;
+  position: relative;
+}
+
+.composition__photo {
+  width: 50%;
+  -webkit-box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+  position: absolute;
+  outline-offset: 20px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.composition__photo--p1 {
+  left: 0;
+  top: -20px;
+}
+
+.composition__photo--p2 {
+  right: 0;
+  top: 20px;
+}
+
+.composition__photo--p3 {
+  left: 20%;
+  top: 100px;
+}
+
+.composition__photo:hover {
+  -webkit-transform: scale(1.05) translateY(-5px);
+          transform: scale(1.05) translateY(-5px);
+  -webkit-box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  outline: 15px solid rgba(15, 139, 240, 0.966);
+}
+
+.composition:hover .composition__photo:not(:hover) {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
 /*# sourceMappingURL=style.css.map */
