@@ -21,48 +21,29 @@ header {
 
 .header-body {
   background-color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   padding: 32px;
 }
-
 .header-body_list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   gap: 40px;
   cursor: pointer;
 }
-
 .header-body_list button {
   background-color: #0071bc;
   padding: 12px;
   border-radius: 8px;
   border: none;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  transition: all 0.3s;
 }
-
 .header-body_list button:hover {
-  -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
-          box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
-  -webkit-transform: translateY(-3px);
-          transform: translateY(-3px);
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+  transform: translateY(-3px);
 }
-
 .header-body_list button a {
   color: #fff;
 }
@@ -70,30 +51,38 @@ header {
 .hero-body {
   width: 100vw;
   height: 65vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../../img/tower.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../img/tower.jpg);
+  background: linear-gradient(rgba(19, 200, 255, 0.5), rgba(19, 200, 255, 0.5)), url(../../img/tower.jpg);
   background-size: cover;
   background-position: bottom center;
   margin-top: 120px;
   position: relative;
 }
-
 .hero-body_title {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  color: #fff;
+  transform: translate(-50%, -50%);
   font-size: 60px;
+  transition: transform 200ms;
+}
+.hero-body_title-1 {
+  color: #fff;
   text-shadow: 3px 3px 6px black;
+  background: linear-gradient(white, rgba(255, 255, 255, 0.5));
+  border-radius: 0 100% 0 100%;
+}
+.hero-body_title-2 {
+  color: #000;
+  text-shadow: -3px -3px 6px white;
+  background: linear-gradient(black, rgba(0, 0, 0, 0.5));
+  border-radius: 0 100% 0 100%;
+  transform: rotate(180deg);
 }
 
 .main {
   width: 70%;
   margin: 50px auto;
 }
-
 .main section {
   margin: 50px 0;
 }
@@ -103,7 +92,6 @@ header {
   font-size: 36px;
   position: relative;
 }
-
 .title::before {
   content: "";
   width: 40%;
@@ -113,7 +101,6 @@ header {
   top: 50%;
   left: 0;
 }
-
 .title::after {
   content: "";
   width: 40%;
@@ -134,7 +121,6 @@ header {
 .introduce-body {
   text-align: center;
 }
-
 .introduce-body_img {
   width: 400px;
   height: 400px;
@@ -142,7 +128,6 @@ header {
   -o-object-fit: cover;
      object-fit: cover;
 }
-
 .introduce-body_text {
   width: 50%;
   padding: 12px 36px;
@@ -150,13 +135,11 @@ header {
   border-radius: 20px;
   margin: 0 auto;
 }
-
 .introduce-body_text h3 {
   font-size: 32px;
   padding: 12px 0;
   text-align: center;
 }
-
 .introduce-body_text .information-list li {
   font-size: 20px;
   padding: 8px 0;
@@ -165,15 +148,10 @@ header {
 }
 
 .picture-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   gap: 20px;
 }
-
 .picture-body_img {
   width: 42%;
   -o-object-fit: cover;
@@ -182,43 +160,30 @@ header {
 }
 
 .hobby-body_card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
 }
-
 .hobby-body_card .card {
   background-color: rgba(255, 255, 255, 0.6);
-  -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
-          box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
   width: 30%;
   padding: 24px;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  transition: all 0.5s;
 }
-
 .hobby-body_card .card img {
   display: block;
   width: 40%;
   margin: 0 auto;
 }
-
 .hobby-body_card .card h4 {
   font-size: 24px;
   text-align: center;
   margin: 32px 0;
 }
-
 .hobby-body_card .card:hover {
-  -webkit-transform: translateY(-5%) scale(1.03);
-          transform: translateY(-5%) scale(1.03);
+  transform: translateY(-5%) scale(1.03);
 }
 
 .posse-body {
@@ -229,13 +194,11 @@ header {
   border-radius: 20px;
   color: #fff;
 }
-
 .posse-body_title {
   font-size: 36px;
   margin-bottom: 30px;
   text-align: center;
 }
-
 .posse-body_text {
   font-size: 20px;
 }
@@ -248,7 +211,6 @@ header {
   padding: 20px 5px;
   border-radius: 16px;
 }
-
 .fixed_text {
   color: #fff;
   font-size: 14px;
@@ -265,7 +227,6 @@ header {
   background-color: #fff;
   padding: 36px;
 }
-
 .footer-body p {
   text-align: center;
 }
@@ -273,28 +234,20 @@ header {
 .footer-content {
   border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
-
 .footer-content_title {
   text-align: center;
   margin: 40px 0;
   font-size: 36px;
 }
-
 .footer-content_body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 20px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .footer-content_body_people h3 {
   text-align: center;
   margin: 40px 0;
 }
-
 .footer-content_body_people img {
   width: 250px;
   height: 250px;
