@@ -19,6 +19,37 @@ header {
   z-index: 2;
 }
 
+header nav a:not(.button) {
+  position: relative;
+}
+
+header nav a:not(.button):hover {
+  color: #23a8d1;
+}
+
+header nav a:not(.button):hover::after {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+header nav a:not(.button)::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #23a8d1;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transform-origin: center top;
+          transform-origin: center top;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
 .header-body {
   background-color: #fff;
   display: -webkit-box;
@@ -70,10 +101,10 @@ header {
 .hero-body {
   width: 100vw;
   height: 65vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../../img/tower.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../img/tower.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(82, 189, 239, 0.5)), to(rgba(0, 113, 188, 0.5))), url(../../img/tower.jpg);
+  background: linear-gradient(rgba(82, 189, 239, 0.5), rgba(0, 113, 188, 0.5)), url(../../img/tower.jpg);
   background-size: cover;
-  background-position: bottom center;
+  background-position: bottom right;
   margin-top: 120px;
   position: relative;
 }
@@ -84,9 +115,29 @@ header {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  color: #fff;
   font-size: 60px;
+  -webkit-transition: -webkit-transform 200ms;
+  transition: -webkit-transform 200ms;
+  transition: transform 200ms;
+  transition: transform 200ms, -webkit-transform 200ms;
+}
+
+.hero-body_title-1 {
+  color: #fff;
   text-shadow: 3px 3px 6px black;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(rgba(255, 255, 255, 0.5)));
+  background: linear-gradient(white, rgba(255, 255, 255, 0.5));
+  border-radius: 0 100% 0 100%;
+}
+
+.hero-body_title-2 {
+  color: #000;
+  text-shadow: -3px -3px 6px white;
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0.5)));
+  background: linear-gradient(black, rgba(0, 0, 0, 0.5));
+  border-radius: 0 100% 0 100%;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .main {
@@ -138,9 +189,37 @@ header {
 .introduce-body_img {
   width: 400px;
   height: 400px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.introduce-body_img img {
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.introduce-body_img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-image: url(../../img/ponta.jpg);
+  background-position: bottom center;
+  background-size: cover;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.introduce-body_img:hover::before {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  opacity: 0;
 }
 
 .introduce-body_text {
@@ -223,7 +302,7 @@ header {
 
 .posse-body {
   padding: 120px;
-  background: radial-gradient(rgba(82, 189, 239, 0.5), rgba(0, 113, 188, 0.5)), url(../../img/image_6487327.JPG);
+  background: radial-gradient(rgba(82, 189, 239, 0.7), rgba(0, 113, 188, 0.7)), url(../../img/image_6487327.JPG);
   background-size: cover;
   background-position: top center;
   border-radius: 20px;
@@ -304,7 +383,7 @@ header {
 }
 
 .memory {
-  height: 800px;
+  height: 600px;
 }
 
 .composition {
@@ -313,7 +392,7 @@ header {
 }
 
 .composition__photo {
-  width: 50%;
+  width: 45%;
   -webkit-box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
           box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
   border-radius: 2px;
@@ -321,7 +400,6 @@ header {
   outline-offset: 20px;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
-  height: 500px;
   -o-object-fit: cover;
      object-fit: cover;
 }
