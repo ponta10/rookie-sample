@@ -1,6 +1,3 @@
-body {
-  background-color: aliceblue;
-}
 li {
   list-style: none;
 }
@@ -43,15 +40,15 @@ header {
         color: #fff;
       }
     }
-    & button {
-      background-color: #0071bc;
-      padding: 12px;
-      border-radius: 8px;
-      border: none;
-      & a{
-          color: #fff;
-     }
-    }
+  }
+  & button {
+    background-color: #0071bc;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    & a{
+        color: #fff;
+   }
   }
   &_title{
     position: absolute;
@@ -76,26 +73,6 @@ header {
   text-align: center;
   font-size: 36px;
   position: relative;
-  &::before {
-    content: "";
-    width: 40%;
-    height: 1px;
-    background-color: #676767;
-    opacity: .3;
-    position: absolute;
-    top: 50%;
-    left: 0;
-  }
-  &::after {
-    content: "";
-    width: 40%;
-    height: 1px;
-    background-color: #676767;
-    opacity: .3;
-    position: absolute;
-    top: 50%;
-    right: 0;
-  }
 }
 .sub {
   text-align: center;

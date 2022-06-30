@@ -1,7 +1,3 @@
-body {
-  background-color: aliceblue;
-}
-
 li {
   list-style: none;
 }
@@ -30,57 +26,38 @@ header {
 }
 
 .header-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   padding: 32px;
 }
-
 .header-body_list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   gap: 40px;
   cursor: pointer;
 }
-
 .header-body_list .topColor {
   color: #fff;
 }
-
 .header-body_list .topColor a {
   color: #fff;
 }
-
-.header-body_list button {
+.header-body button {
   background-color: #0071bc;
   padding: 12px;
   border-radius: 8px;
   border: none;
 }
-
-.header-body_list button a {
+.header-body button a {
   color: #fff;
 }
-
 .header-body_title {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   color: #fff;
   font-size: 72px;
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
@@ -90,7 +67,6 @@ header {
   width: 70%;
   margin: 150px auto;
 }
-
 .main section {
   margin: 50px 0;
 }
@@ -99,28 +75,6 @@ header {
   text-align: center;
   font-size: 36px;
   position: relative;
-}
-
-.title::before {
-  content: "";
-  width: 40%;
-  height: 1px;
-  background-color: #676767;
-  opacity: .3;
-  position: absolute;
-  top: 50%;
-  left: 0;
-}
-
-.title::after {
-  content: "";
-  width: 40%;
-  height: 1px;
-  background-color: #676767;
-  opacity: .3;
-  position: absolute;
-  top: 50%;
-  right: 0;
 }
 
 .sub {
@@ -133,7 +87,6 @@ header {
 .introduce-body {
   text-align: center;
 }
-
 .introduce-body_img {
   width: 400px;
   height: 400px;
@@ -141,7 +94,6 @@ header {
   -o-object-fit: cover;
      object-fit: cover;
 }
-
 .introduce-body_text {
   width: 50%;
   padding: 12px 36px;
@@ -149,13 +101,11 @@ header {
   border-radius: 20px;
   margin: 0 auto;
 }
-
 .introduce-body_text h3 {
   font-size: 32px;
   padding: 12px 0;
   text-align: center;
 }
-
 .introduce-body_text .information-list li {
   font-size: 20px;
   padding: 8px 0;
@@ -163,15 +113,10 @@ header {
 }
 
 .picture-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   gap: 20px;
 }
-
 .picture-body_img {
   width: 42%;
   -o-object-fit: cover;
@@ -183,7 +128,6 @@ header {
   background-color: #fff;
   padding: 36px;
 }
-
 .footer-body p {
   text-align: center;
 }
